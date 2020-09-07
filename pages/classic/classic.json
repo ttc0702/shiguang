@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "classic-header": "./components/header/header",
+        "classic-movie": "./components/movie/movie",
+        "classic-music": "./components/music/music",
+        "classic-essay": "./components/essay/essay",
+        "classic-main": "./components/main/main",
+        "classic-nav": "./components/nav/nav"
+    }
+}

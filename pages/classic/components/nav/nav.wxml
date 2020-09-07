@@ -1,0 +1,5 @@
+<view class="nav">
+    <text bind:tap="onLeft" class="iconfont icon-left {{latest ? 'icon-fade' : ''}}"></text>
+    <text class="nav-title">{{title}}</text>
+    <text bind:tap="onRight" class="iconfont icon-right {{first ? 'icon-fade' : 'icon'}}"></text>
+</view>

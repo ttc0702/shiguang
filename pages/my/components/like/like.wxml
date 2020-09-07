@@ -1,0 +1,36 @@
+<view class="like">
+    <image class="like-title" src="/images/my/like.png"></image>
+    <view class="like-list" bind:tap="handleTap">
+        <view class="item" wx:for="{{classicLike}}" wx:key="index" mark:type="{{item.type}}" mark:id="{{item.id}}">
+            <view class="item-header">
+                <tag-common class="item-tag" text="{{filter.transform(item.type)}}"></tag-common>
+                <like-button class="item-like" read-only="{{true}}" like="{{true}}" count="{{item.fav_nums}}">
+                </like-button>
+            </view>
+            <view class="like-img">
+                <image class="{{item.type === 200 ? 'img-music' : 'img'}}" src="{{item.image}}"></image>
+                <view class="music-circle" wx:if="{{item.type === 200}}"></view>
+            </view>
+            <view class="item-text">{{item.content}}</view>
+        </view>
+    </view>
+</view>
+
+<!-- wxs 中的对象不能用数字作为属性，否则报空白错误 -->
+<!-- wxs 中的注释也可能导致报错 -->
+<wxs module="filter">
+    var typeText = {
+        "100": "电影",
+        "200": "音乐",
+        "300": "句子"
+    }
+
+    var transform = function(type) {
+        type = type.toString()
+        return typeText[type]
+    }
+
+    module.exports = {
+        transform: transform
+    }
+</wxs>

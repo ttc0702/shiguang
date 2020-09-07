@@ -1,0 +1,7 @@
+<view class="music">
+    <image class="music-img {{playing ? 'rotation' : ''}}" src="{{img}}"></image>
+    <!-- <image class="music-button" src="{{playing ? pauseSrc : playSrc}}" bind:tap="onPlay"></image> -->
+    <text class="iconfont {{playing ? 'icon-pause' : 'icon-play'}}" bind:tap="onPlay"></text>
+    <image class="music-tag" src="./images/music@tag.png"></image>
+    <text class="music-content">{{content}}</text>
+</view>

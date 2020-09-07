@@ -1,0 +1,5 @@
+<view class="brief">
+    <view class="brief-title">内容简介</view>
+    <text class="brief-text" decode="{{true}}">{{summary}}</text>
+</view>
+

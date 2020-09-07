@@ -1,0 +1,72 @@
+@import "/assets/iconfont/iconfont.wxss";
+
+.music {
+    display: flex;
+    /* text-align: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.music-img {
+    width: 422rpx;
+    height: 422rpx;
+    margin-top: 60rpx;
+    border-radius: 50%;
+}
+
+.music-button {
+    width: 120rpx;
+    height: 120rpx;
+    position: relative;
+    bottom: 270rpx;
+}
+
+.iconfont {
+    box-sizing: border-box;
+    width: 120rpx;
+    height: 120rpx;
+    line-height: 120rpx;
+    position: relative;
+    bottom: 270rpx;
+    font-size: 40rpx;
+    text-align: center;
+    border-radius: 60rpx;
+    background-color: #fff;
+    color: #000;
+    box-shadow: inset 0 0 20rpx 0 #bbb;
+}
+
+.icon-play {
+    padding-left: 12rpx;
+}
+
+.music-tag {
+    width: 44rpx;
+    height: 128rpx;
+    position: relative;
+    bottom: 160rpx;
+    right: 310rpx;
+}
+
+.music-content {
+    font-size: 36rpx;
+    max-width: 550rpx;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotation {
+    transform: rotate(360deg);
+    animation: rotation 30s linear infinite;
+    -moz-animation: rotation 30s linear infinite;
+    -webkit-animation: rotation 30s linear infinite;
+    -o-animation: rotation 30s linear infinite;
+}

@@ -1,0 +1,6 @@
+<!-- components/like/index.wxml -->
+<view bind:tap="toggleLike" class="like">
+    <!-- <image src="{{like ? srcLike : srcUnlike}}"></image> -->
+    <text class="iconfont {{!like ? 'icon-like' : 'icon-like-fill'}}"></text>
+    <text class="count">{{count}}</text>
+</view>

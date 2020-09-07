@@ -1,0 +1,15 @@
+<view class="search">
+    <search-header bind:search="handleSearch" bind:clear="clear" keyword="{{keyword}}"></search-header>
+
+    <search-recommend class="search-history" wx:if="{{!searching}}" bind:search="handleSearch" title="历史搜索"
+        rec="{{history}}">
+    </search-recommend>
+    <search-recommend wx:if="{{!searching}}" bind:search="handleSearch" title="热门搜索" rec="{{hot}}"></search-recommend>
+
+    <search-list class="search-list" wx:if="{{searching}}" books="{{books}}"></search-list>
+    
+    <search-loading class="loading-center" wx:if="{{loadingCenter}}"></search-loading>
+
+    <search-loading class="loading-bottom" wx:if="{{getting}}"></search-loading>
+    <text class="search-empty" wx:if="{{noResult}}">暂无搜索结果</text>
+</view>

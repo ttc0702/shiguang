@@ -1,0 +1,7 @@
+<view class="tag ex-tag" bind:tap="handleTap">
+    <text class="tag-text">{{text}}</text>
+    <!-- <text class="tag-nums">{{nums}}</text> -->
+
+    <!-- html 中的 slot 类似 js 中的 properties -->
+    <slot name="nums"></slot>
+</view>

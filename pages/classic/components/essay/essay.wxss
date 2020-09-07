@@ -1,0 +1,24 @@
+.essay {
+    display: flex;
+    /* text-align: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.essay-img {
+    width: 750rpx;
+    /* width: 100%; */
+}
+
+.essay-tag {
+    width: 46rpx;
+    height: 142rpx;
+    position: relative;
+    right: 310rpx;
+    bottom: 58rpx;
+}
+
+.essay-content {
+    font-size: 36rpx;
+    max-width: 550rpx;    
+}

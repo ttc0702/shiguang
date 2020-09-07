@@ -1,0 +1,12 @@
+<wxs src="../../../../utils/filter.wxs" module="filter"></wxs>
+
+<view class="comments">
+    <view class="comments-title">短评</view>
+    <view class="comments-container">
+        <view class="comments-empty" wx:if="{{comments.length === 0}}">本书暂无短评</view>
+        <tag-common class="comments-tag" wx:for="{{comments}}" wx:key="{{index}}" text="{{item.content}}" ex-tag="{{filter.highlight(index)}}">
+            <text class="nums" slot="nums">+{{item.nums}}</text>
+        </tag-common>
+    </view>
+</view>
+

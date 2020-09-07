@@ -1,0 +1,6 @@
+<view class="essay" hidden="{{hidden}}">
+    <image class="essay-img" src="{{img}}"></image>
+    <image class="essay-tag" src="images/essay@tag.png"></image>
+    <text class="essay-content">{{content}}</text>
+</view>
+

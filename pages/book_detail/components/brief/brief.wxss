@@ -1,0 +1,21 @@
+.brief {
+    margin-top: 20rpx;
+    background-color: #fff;
+}
+
+.brief-title {
+    padding-top: 20rpx;
+    text-align: center;
+    font-size: 30rpx;
+    font-weight: bold;
+    color: #2f2f2f;
+}
+
+.brief-text {
+    display: block;
+    width: 630rpx;
+    padding: 20rpx 60rpx;
+    font-size: 28rpx;
+    color: #666;
+    text-indent: 56rpx;
+}

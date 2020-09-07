@@ -1,0 +1,8 @@
+<classic-header class="header" index="{{classic.index}}" like="{{like}}" classic="{{classic}}"></classic-header>
+<classic-movie hidden="{{classic.type !== 100}}" img="{{classic.image}}" content="{{classic.content}}">
+</classic-movie>
+<classic-music wx:if="{{classic.type === 200}}" img="{{classic.image}}" content="{{classic.content}}"
+    src="{{classic.url}}" title="{{classic.title}}"></classic-music>
+<classic-essay hidden="{{classic.type !== 300}}" img="{{classic.image}}" content="{{classic.content}}">
+</classic-essay>
+<!-- <classic-main class="main" img="{{classic.image}}" content="{{classic.content}}" type="{{classic.type}}" src="{{classic.url}}" title="{{classic.title}}"></classic-main> -->

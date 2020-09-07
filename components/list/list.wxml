@@ -1,0 +1,13 @@
+<view class="list">
+    <image wx:if="{{books[0].fav_nums}}" class="title" src="/images/book/quality.png"></image>
+    <view class="booklist" bind:tap="handleTap">
+        <view class="book" wx:for="{{books}}" wx:key="id" mark:id="{{item.id}}">
+            <image class="book-image" src="{{item.image}}"></image>
+            <view class="book-description">
+                <text class="book-title">{{item.title}}</text>
+                <text class="book-author">{{item.author}}</text>
+                <text wx:if="{{item.fav_nums}}" class="book-footer">{{item.fav_nums}} 喜欢</text>
+            </view>
+        </view>
+    </view>
+</view>

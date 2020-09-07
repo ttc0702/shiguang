@@ -1,0 +1,31 @@
+@import "/assets/iconfont/iconfont.wxss";
+
+.like {
+    display: inline-flex;
+    padding: 10rpx;
+    width: 100rpx;
+}
+
+/* .like image {
+    width: 32rpx;
+    height: 28rpx;
+} */
+
+.like .iconfont {
+    width: 40rpx;
+    height: 40rpx;
+    font-size: 40rpx;
+    line-height: 40rpx;
+}
+
+.like .icon-like-fill {
+    color: #e9929a;
+}
+
+.like .count {
+    font-size: 24rpx;
+    line-height: 36rpx;
+    color: #aaa;
+    margin-left: 4rpx;
+    /* bottom: 10rpx; */
+}

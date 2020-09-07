@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "tag-common": "/components/tag/tag",
+        "like-button": "/components/like/like"
+    }
+}

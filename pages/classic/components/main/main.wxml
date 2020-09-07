@@ -1,0 +1,6 @@
+<view class="main">
+    <image class="{{type === 200 ? 'main-music-img' : 'main-img'}} {{playing ? 'rotation' : ''}}" src="{{img}}"></image>
+    <image class="main-music-button" src="{{playing ? pauseSrc : playSrc}}" hidden="{{type === 200 ? false : true}}" bind:tap="onPlay"></image>
+    <image class="{{type === 200 ? 'main-music-tag' : 'main-tag'}}" src="{{type === 100 ? movieSrc : type === 200 ? musicSrc : essaySrc}}"></image>
+    <text class="main-content">{{content}}</text>
+</view>

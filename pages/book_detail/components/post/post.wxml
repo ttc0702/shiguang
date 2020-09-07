@@ -1,0 +1,17 @@
+<wxs src="../../../../utils/filter.wxs" module="filter"></wxs>
+
+<view class="mask" bind:tap="hidePost"></view>
+<view class="post">
+    <view class="post-comments">
+        <view class="post-empty" wx:if="{{comments.length === 0}}">本书暂无短评</view>
+        <tag-common class="comments-tag" bind:submit="handlePost" wx:for="{{comments}}" wx:key="{{index}}"
+            text="{{item.content}}" ex-tag="{{filter.highlight(index)}}">
+            <text class="nums" slot="nums">+{{item.nums}}</text>
+        </tag-common>
+    </view>
+    <view class="post-container">
+        <input class="post-input" bind:confirm="handlePost" bindinput="handleInput" value="{{inputValue}}" type="text"
+            placeholder="留下你的精彩短评吧（最多12个字）" focus cursor-spacing="20rpx" confirm-type="send" />
+        <text class="iconfont icon-send {{enabled ? 'enabled' : ''}}" bind:tap="handlePost"></text>
+    </view>
+</view>

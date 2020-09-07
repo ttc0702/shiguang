@@ -1,0 +1,23 @@
+var format = function (text) {
+    if (!text) {
+        return
+    }
+    var reg = getRegExp('\\\\n', 'g')
+    return text.replace(reg, '\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
+  
+}
+
+function highlight(index) {
+    switch (index) {
+        case 0:
+            return 'ex-tag1'
+        case 1:
+            return 'ex-tag2'
+    }
+    return ''
+}
+
+module.exports = {
+    format: format,
+    highlight: highlight
+}

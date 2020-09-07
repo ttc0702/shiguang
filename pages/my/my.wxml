@@ -1,0 +1,4 @@
+<view class="my">
+    <my-info bookCount="{{bookCount}}"></my-info>
+    <my-like classicLike="{{classicLike}}"></my-like>
+</view>

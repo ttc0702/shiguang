@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+      "search-header": "./components/header/header",
+      "search-recommend": "./components/recommend/recommend",
+      "search-list": "/components/list/list",
+      "search-loading": "./components/loading/loading"
+  }
+}

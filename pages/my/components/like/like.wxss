@@ -1,0 +1,76 @@
+.like {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.like-title {
+    width: 97rpx;
+    height: 42rpx;
+    margin-top: 40rpx;
+}
+
+.like-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40rpx;
+    padding: 0 30rpx;
+    width: 690rpx;
+    min-height: 700rpx;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.item {
+    box-shadow: 2px 2px 3px #eee;
+    width: 330rpx;
+    margin-bottom: 50rpx;
+    background-color: #fff;
+}
+
+.item-header {
+    padding: 20rpx 0 20rpx 20rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.like-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.img {
+    width: 100%;
+    height: 240rpx;
+}
+
+.img-music {
+    border-radius: 50%;
+    width: 240rpx;
+    height: 240rpx;
+}
+
+.music-circle {
+    position: absolute;
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 40rpx;
+    background-color: #fff;
+    top: 80rpx;
+}
+
+.item-text {
+    margin: 30rpx;
+    font-size: 28rpx;
+    height: 80rpx;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

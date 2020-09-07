@@ -1,0 +1,9 @@
+<view class="recommend">
+    <view class="recommend-container">
+        <view class="recommend-icon"></view>
+        <text class="recommend-title">{{title}}</text>
+    </view>
+    <view class="recommend-list">
+        <tag-common class="recommend-tag" bind:submit="handlePost" wx:for="{{rec}}" wx:key="{{index}}" text="{{item}}"></tag-common>
+    </view>
+</view>

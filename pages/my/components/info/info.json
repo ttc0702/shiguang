@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "img-button": "/components/img-button/img-button"
+    }
+}

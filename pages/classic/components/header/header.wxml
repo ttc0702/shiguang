@@ -1,0 +1,18 @@
+<view class="header">
+    <view class="episode">
+        <view class="episode-container">
+            <text class="episode-plain">No.</text>
+            <text class="episode-index">{{_index}}</text>
+            <view class="episode-line"></view>
+        </view>
+        <view class="episode-date">
+            <text class="episode-month">{{month}}</text>
+            <text class="episode-year">{{year}}</text>
+        </view>
+    </view>
+    <like-button class="like" bind:like="onLike" like="{{like.status}}" count="{{like.count}}" index="{{index}}">
+    </like-button>
+    <button class="button" open-type="share" plain="{{true}}">
+        <text class="iconfont icon-share"></text>
+    </button>
+</view>

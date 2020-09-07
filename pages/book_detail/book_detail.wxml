@@ -1,0 +1,20 @@
+<wxs src="../../utils/filter.wxs" module="filter"></wxs>
+
+<view class="book-detail">
+    <detail-cover detail="{{detail}}"></detail-cover>
+    <detail-comments comments="{{utils.limit(comments, 10)}}"></detail-comments>
+    <detail-brief summary="{{filter.format(detail.summary)}}"></detail-brief>
+    <detail-info detail="{{detail}}"></detail-info>
+    <detail-footer bind:toggle="handleToggle" bookId="{{like.id}}" likeStatus="{{like.like_status}}" likeCount="{{like.fav_nums}}" ></detail-footer>
+    <detail-post bind:toggle="handleToggle" bind:add="addComment" wx:if="{{posting}}" comments="{{utils.limit(comments, 3)}}" bookId="{{like.id}}"></detail-post>
+</view>
+
+<wxs module="utils">
+    var limit = function(array, length) {
+        return array.slice(0, length)
+    }
+
+    module.exports = {
+        limit: limit
+    }
+</wxs>

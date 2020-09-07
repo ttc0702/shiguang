@@ -1,0 +1,6 @@
+<view class="books">
+    <books-header></books-header>
+    <books-main books="{{books}}"></books-main>
+</view>
+
+

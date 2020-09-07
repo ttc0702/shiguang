@@ -1,0 +1,5 @@
+<view class="cover">
+    <image class="cover-img" src="{{detail.image}}"></image>
+    <text class="cover-title">{{detail.title}}</text>
+    <text class="cover-author">{{detail.author}}</text>
+</view>

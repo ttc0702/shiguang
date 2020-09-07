@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+      "my-info": "./components/info/info",
+      "my-like": "./components/like/like"
+  }
+}

@@ -1,0 +1,10 @@
+<view class="footer">
+    <view class="footer-fake" bind:tap="showPost">
+        <text class="iconfont icon-write"></text>
+        <text class="footer-placeholder">留下你的精彩短评吧</text>
+    </view>
+    <like-button class="like" bind:like="handleLike" like="{{likeStatus}}" count="{{likeCount}}"></like-button>
+    <button class="button" open-type="share" plain="{{true}}">
+        <text class="iconfont icon-share"></text>
+    </button>
+</view>

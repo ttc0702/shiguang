@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "detail-cover": "./components/cover/cover",
+        "detail-comments": "./components/comments/comments",
+        "detail-brief": "./components/brief/brief",
+        "detail-info": "./components/info/info",
+        "detail-footer": "./components/footer/footer",
+        "detail-post": "./components/post/post"
+    }
+}

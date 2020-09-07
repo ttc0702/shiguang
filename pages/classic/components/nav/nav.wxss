@@ -1,0 +1,29 @@
+@import "/assets/iconfont/iconfont.wxss";
+
+.nav {
+    width: 600rpx;
+    height: 80rpx;
+    position: absolute;
+    left: 75rpx;
+    bottom: 40rpx;
+    background-color: #f7f7f7;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconfont {
+    width: 58rpx;
+    height: 80rpx;
+    font-size: 46rpx;
+    line-height: 80rpx;
+    padding-left: 12rpx;
+}
+
+.icon-fade {
+    color: #ccc;
+}
+
+.nav-title {
+    font-size: 28rpx;
+}

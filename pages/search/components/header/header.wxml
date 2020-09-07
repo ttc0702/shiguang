@@ -1,0 +1,8 @@
+<view class="header">
+    <view class="header-container">
+        <icon class="header-search" type="search" size="16"></icon>
+        <input class="header-input" bind:confirm="handleConfirm" bind:input="handleInput" value="{{keyword}}" type="text" placeholder="搜索图书名称" focus/>
+        <icon hidden="{{!keyword}}" class="header-clear" bind:tap="clear" type="clear" size="16"></icon>
+    </view>
+    <text class="header-button {{enabled ? 'enabled' : ''}}" bind:tap="handleConfirm">搜索</text>
+</view>

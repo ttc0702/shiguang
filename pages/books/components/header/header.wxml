@@ -1,0 +1,7 @@
+<view class="header">
+    <view class="header-input" bind:tap="handleTap">
+        <!-- <text class="iconfont icon-search"></text> -->
+        <icon class="header-search" type="search" size="16"></icon>
+        <text class="header-placeholder">搜索书籍</text>
+    </view>
+</view> 

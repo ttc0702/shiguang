@@ -1,0 +1,43 @@
+@import "/assets/iconfont/iconfont.wxss";
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 690rpx;
+    height: 100rpx;
+    padding: 0 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 -2rpx 2rpx #ddd;
+    background-color: #fff;
+}
+
+.footer-fake {
+    display: flex;
+    align-items: center;
+    width: 480rpx;
+    height: 60rpx;
+    background-color: #eee;
+    border-radius: 30rpx;
+}
+
+.icon-write {
+    margin-left: 30rpx;
+}
+
+.footer-placeholder {
+    margin-left: 10rpx;
+    font-size: 28rpx;
+    color: #666;
+}
+
+.like {
+    margin-left: 30rpx;
+}
+
+.button {
+    margin-left: 10rpx;
+    padding: 0;
+    border: none !important;
+}

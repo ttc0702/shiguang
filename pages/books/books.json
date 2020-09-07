@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "books-header": "./components/header/header",
+        "books-main": "/components/list/list"
+    }
+}

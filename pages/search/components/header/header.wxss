@@ -1,0 +1,55 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 690rpx;
+    height: 100rpx;
+    padding: 0 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.header-container {
+    position: relative;
+    display: flex;
+    align-items: center; 
+}
+
+.header-input {
+    box-sizing: border-box;
+    width: 590rpx;
+    height: 68rpx;
+    padding: 0 70rpx;
+    background-color: #f5f5f5;
+    border-radius: 34rpx;
+    font-size: 28rpx;
+}
+
+.header-search {
+    position: absolute;
+    left: 30rpx;
+
+}
+
+.header-clear {
+    box-sizing: border-box;
+    width: 60rpx;
+    height: 100%;
+    padding-top: 18rpx;
+    position: absolute;
+    right: 0;
+}
+
+.header-button {
+    margin-right: 6rpx;
+    color: #999;
+}
+
+.enabled {
+    color: #000;
+}

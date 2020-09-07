@@ -1,0 +1,32 @@
+.recommend {
+    margin-top: 30rpx;
+}
+.recommend-container {
+    display: flex;
+    align-items: center;
+}
+
+.recommend-icon {
+    margin-left: 30rpx;
+    height: 30rpx;
+    width: 10rpx;
+    background-color: #000;
+    display: inline-block;
+}
+
+.recommend-title {
+    margin-left: 20rpx;
+    font-size: 28rpx;
+}
+
+.recommend-list {
+    width: 690rpx;
+    padding: 20rpx 60rpx;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recommend-tag {
+    margin-right: 15rpx;
+    margin-bottom: 10rpx;
+}
